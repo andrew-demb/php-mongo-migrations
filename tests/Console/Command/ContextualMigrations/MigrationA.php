@@ -5,7 +5,7 @@ namespace TestMigrations\ContextualMigrations;
 use Gruberro\MongoDbMigrations;
 use MongoDB\Database;
 
-class MigrationA implements MongoDbMigrations\MigrationInterface, MongoDbMigrations\ContextualMigrationInterface
+class MigrationA implements MongoDbMigrations\ContextualMigrationInterface, MongoDbMigrations\MigrationInterface
 {
     public function getId(): string
     {
